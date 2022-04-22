@@ -1,7 +1,10 @@
+import { memo } from "react";
 import style from "./navigation.module.scss";
 
-export default function NavigationBar() {
+function NavigationBar() {
   return <nav className={style.nav}>
 
   </nav>
 }
+
+export default memo(NavigationBar)

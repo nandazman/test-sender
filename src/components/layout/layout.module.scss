@@ -1,0 +1,11 @@
+.toggle {
+  @apply absolute flex items-center justify-end cursor-pointer;
+  height: 80px;
+  &.opened {
+    width: 250px;
+  }
+  &.closed {
+    width: 120px;
+  }
+  z-index: 2;
+}

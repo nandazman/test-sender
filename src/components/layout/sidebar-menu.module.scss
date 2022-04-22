@@ -9,4 +9,12 @@
       @apply mb-40px;
     }
   }
+  &.hide {
+    .item {
+      @apply justify-center;
+      span {
+        @apply hidden;
+      }
+    }
+  }
 }

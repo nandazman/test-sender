@@ -1,11 +1,16 @@
 .sidebar {
-  @apply bg-light-grey fixed min-h-screen;
+  @apply bg-light-grey fixed min-h-screen text-semi-normal transition-all;
   top: 0;
   left: 0;
-  width: 230px;
   z-index: 1;
+  &.opened {
+    width: 230px;
+  }
+  &.closed {
+    width: 100px
+  }
   .logo {
-    @apply text-center pt-40px pb-30px;
+    @apply text-center pt-20px pb-30px;
     & > svg {
       @apply mx-auto;
     }

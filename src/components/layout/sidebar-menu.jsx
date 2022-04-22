@@ -1,3 +1,4 @@
+import cn from "classnames";
 import BroadcastIcon from "../icons/broadcast";
 import ChatIcon from "../icons/chat";
 import DeviceIcon from "../icons/device";
@@ -7,9 +8,9 @@ import MessageIcon from "../icons/message";
 import ProfileIcon from "../icons/profile";
 import style from "./sidebar-menu.module.scss";
 
-export default function SidebarMenu() {
+export default function SidebarMenu({ hideText }) {
   return (
-    <div className={style.wrapper}>
+    <div className={cn(style.wrapper, { [style.hide]: hideText })}>
       <div className={style.item}>
         <HomeIcon />
         <span>Home</span>
