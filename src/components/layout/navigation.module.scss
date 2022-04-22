@@ -1,4 +1,10 @@
 .nav {
-  @apply bg-white text-dark-blue drop-shadow-[1px_3px_9px_rgba(0,0,0,0.09)];
+  @apply bg-white text-dark-blue drop-shadow-[1px_3px_9px_rgba(0,0,0,0.09)] pl-30px pr-50px flex justify-between items-center;
   height: 80px;
+  &.opened {
+    margin-left: 230px;
+  }
+  &.closed {
+    margin-left: 100px;
+  }
 }
