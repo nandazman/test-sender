@@ -1,7 +1,7 @@
 export default function BroadcastIcon() {
   return (
     <svg
-      width="24"
+      width="20"
       height="21"
       viewBox="0 0 24 21"
       fill="none"
