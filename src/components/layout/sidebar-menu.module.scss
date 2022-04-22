@@ -1,0 +1,12 @@
+.wrapper {
+  @apply px-6;
+  .item {
+    @apply flex gap-x-18px cursor-pointer;
+    &:first-child {
+      @apply mt-20px;
+    }
+    &:not(:last-child) {
+      @apply mb-40px;
+    }
+  }
+}

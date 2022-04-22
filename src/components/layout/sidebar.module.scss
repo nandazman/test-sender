@@ -1,0 +1,16 @@
+.sidebar {
+  @apply bg-light-grey fixed min-h-screen;
+  top: 0;
+  left: 0;
+  width: 230px;
+  .logo {
+    @apply text-center pt-40px pb-30px;
+    & > svg {
+      @apply mx-auto;
+    }
+  }
+  .footer {
+    @apply text-center py-20px text-placeholder absolute w-full;
+    bottom: 0;
+  }
+}

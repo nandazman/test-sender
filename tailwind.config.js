@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     screens: {
@@ -20,13 +20,15 @@ module.exports = {
       large: "12px",
     },
     extend: {
-      margin: {
+      spacing: {
         "15px": "15px",
         "16px": "16px",
+        "18px": "18px",
         "20px": "20px",
         "24px": "24px",
         "30px": "30px",
         "32px": "32px",
+        "40px": "40px",
         "48px": "48px",
         "50px": "50px",
       },

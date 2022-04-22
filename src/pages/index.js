@@ -1,8 +1,6 @@
-import Layout from '../components/layout';
+import Layout from '../components/layout/layout';
 
 export default function Home() {
-  var a = "123";
-  console.log("a")
   return (
     <Layout>
       <div>
