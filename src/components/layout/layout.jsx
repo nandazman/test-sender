@@ -29,7 +29,14 @@ export default function Layout({ children }) {
         </div>
         <Sidebar menuOpened={open} />
         <NavigationBar menuOpened={open} />
-        <main>{children}</main>
+        <main
+          className={style.main}
+          style={{
+            marginLeft: open ? "230px" : "100px",
+          }}
+        >
+          {children}
+        </main>
       </div>
     </>
   );

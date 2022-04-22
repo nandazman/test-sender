@@ -4,10 +4,10 @@ export default function Home() {
   return (
     <Layout>
       <div>
-        <main>
-          Hello World
-        </main>
+        <p className="mb-16px text-large text-black">
+          Akumulasi peforma anda hari ini
+        </p>
       </div>
     </Layout>
-  )
+  );
 }

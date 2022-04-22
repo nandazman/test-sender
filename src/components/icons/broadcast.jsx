@@ -1,8 +1,8 @@
-export default function BroadcastIcon() {
+export default function BroadcastIcon({ width = 20, height = 21 }) {
   return (
     <svg
-      width="20"
-      height="21"
+      width={width}
+      height={height}
       viewBox="0 0 24 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -13,5 +13,4 @@ export default function BroadcastIcon() {
       />
     </svg>
   );
-
 }
