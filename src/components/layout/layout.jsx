@@ -1,4 +1,5 @@
 import Meta from "./meta";
+import NavigationBar from "./navigation";
 import Sidebar from "./sidebar";
 
 export default function Layout({ children }) {
@@ -7,6 +8,7 @@ export default function Layout({ children }) {
       <Meta />
       <div className="min-h-screen">
         <Sidebar />
+        <NavigationBar />
         <main>{children}</main>
       </div>
     </>

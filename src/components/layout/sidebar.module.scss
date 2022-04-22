@@ -3,6 +3,7 @@
   top: 0;
   left: 0;
   width: 230px;
+  z-index: 1;
   .logo {
     @apply text-center pt-40px pb-30px;
     & > svg {
