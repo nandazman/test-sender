@@ -12,31 +12,45 @@ export default function SidebarMenu({ hideText }) {
   return (
     <div className={cn(style.wrapper, { [style.hide]: hideText })}>
       <div className={style.item}>
-        <HomeIcon />
+        <span className={style.icon}>
+          <HomeIcon />
+        </span>
         <span>Home</span>
       </div>
       <div className={style.item}>
-        <BroadcastIcon />
+        <span className={style.icon}>
+          <BroadcastIcon />
+        </span>
         <span>Broadcast Pesan</span>
       </div>
       <div className={style.item}>
-        <MessageIcon />
+        <span className={style.icon}>
+          <MessageIcon />
+        </span>
         <span>List Pesan (Keluar)</span>
       </div>
       <div className={style.item}>
-        <ChatIcon />
+        <span className={style.icon}>
+          <ChatIcon />
+        </span>
         <span>Obrolan</span>
       </div>
       <div className={style.item}>
-        <ProfileIcon />
+        <span className={style.icon}>
+          <ProfileIcon />
+        </span>
         <span>Profil</span>
       </div>
       <div className={style.item}>
-        <DeviceIcon />
+        <span className={style.icon}>
+          <DeviceIcon />
+        </span>
         <span>Device</span>
       </div>
       <div className={style.item}>
-        <ExitIcon />
+        <span className={style.icon}>
+          <ExitIcon />
+        </span>
         <span>Keluar</span>
       </div>
     </div>
