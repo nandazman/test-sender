@@ -1,8 +1,8 @@
-export default function DeviceIcon() {
+export default function DeviceIcon({ width = 14, height = 21 }) {
   return (
     <svg
-      width="14"
-      height="21"
+      width={width}
+      height={height}
       viewBox="0 0 14 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

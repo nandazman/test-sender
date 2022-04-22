@@ -1,8 +1,8 @@
-export default function MessageIcon() {
+export default function MessageIcon({ width = 20, height = 21 }) {
   return (
     <svg
-      width="20"
-      height="21"
+      width={width}
+      height={height}
       viewBox="0 0 26 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
