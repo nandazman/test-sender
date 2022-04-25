@@ -1,8 +1,9 @@
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import { Pie } from 'react-chartjs-2';
 import Layout from '../components/layout/layout';
+import { getPokemonDitto } from "../lib/api";
 
-const data = {
+const pieData = {
   labels: ["Red", "Blue", "Yellow", "Green"],
   datasets: [
     {
@@ -36,17 +37,26 @@ const options = {
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
       <div>
         <p className="mb-16px text-large text-black">
           Akumulasi peforma anda hari ini
         </p>
-        <div className="w-1/4">
-          <Pie data={data} options={options} datasetIdKey="pie-chart" />
+        <div className="w-1/4 mb-16px">
+          <Pie data={pieData} options={options} datasetIdKey="pie-chart" />
         </div>
+        <div>Example Data: </div>
+        <div>{JSON.stringify(data)}</div>
       </div>
     </Layout>
   );
+}
+
+export async function getServerSideProps() {
+  const data = await getPokemonDitto();
+  return {
+    props: { data },
+  };
 }
