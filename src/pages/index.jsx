@@ -1,7 +1,7 @@
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from "chart.js";
 import { Pie } from 'react-chartjs-2';
 import Layout from '../components/layout/layout';
-import { getPokemonDitto } from "../lib/api";
+import { getPokemonIvysaur } from "../lib/api";
 
 const pieData = {
   labels: ["Red", "Blue", "Yellow", "Green"],
@@ -48,14 +48,15 @@ export default function Home({ data }) {
           <Pie data={pieData} options={options} datasetIdKey="pie-chart" />
         </div>
         <div>Example Data: </div>
-        <div>{JSON.stringify(data)}</div>
+        <div className="text-clip overflow-hidden">{JSON.stringify(data)}</div>
       </div>
     </Layout>
   );
 }
 
 export async function getServerSideProps() {
-  const data = await getPokemonDitto();
+  // if get data is prefered from client side, then use useEffect
+  const data = await getPokemonIvysaur();
   return {
     props: { data },
   };
