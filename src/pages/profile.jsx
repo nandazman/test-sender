@@ -17,7 +17,6 @@ export default function Profile() {
     getData();
   }, []);
 
-  console.log("hehe")
   return (
     <Layout>
       <div>
